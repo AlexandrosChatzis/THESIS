@@ -1,0 +1,22 @@
+(request $request) {
+        $data = $request->session()->get('choice');
+
+
+->where('app_id', '=',  $data)
+
+'app_id'=> $data,
+
+
+
+
+
+(request $request) {
+        $student_choice = $request->session()->get('student_choice');
+
+->where('app_id', '=',  $student_choice)
+
+
+'app_id'=> $student_choice,
+
+{{ url('/user-info') }}
+   <img   style="width:90px; height:70px; " onclick="window.location='{{ route('login') }}'" src="uliko/teicm.png">
